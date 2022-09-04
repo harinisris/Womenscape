@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%# Head %>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Community - Womenscape </title>
+		<link rel="stylesheet" href="/styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/43c1b0f304.js" crossOrigin="anonymous"></script>
+	</head>
+	<%# end of head %>
+	<body>
+		<%# Import Nav %>
+		<header>
+			<%- include('../partials/nav') %>
+		</header>
+
+		<%# Main content %>
+		<main>
+			<%# Absolute SVG that is displayed on page %>
+			<img src="/media/topItem.svg" class="topItemLarge" />
+			<%# Text Header at top of page %>
+			<article class="vrHeader">
+				<h1>Communities</h1>
+				<p>A tech community attracts the kind of people who are keen to help one another. So, often simply by being part of a community, many entrepreneurs find experts in everything from marketing and sales, to software development and legal matters to guide them along the way. </p>
+			</article>
+			<%# Import cards %>
+			<section>
+				<%- include('../partials/Cardz') %>
+				<%# Absolute SVGs that are displayed on page %>
+				<img src="/media/ellipse.svg" class="ellipseTwo" />
+			</section>
+		</main>
+		<%# End of main content %>
+
+		<%# Import footer %>
+		<footer>
+			<%- include('../partials/footer') %>
+		</footer>
+	</body>
+</html>
